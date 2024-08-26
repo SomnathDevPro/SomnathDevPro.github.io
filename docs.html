@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>swoop.js-documentation</title>
+  <link rel="stylesheet" href="docstyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+  <nav id="nav">
+    <span class="fa-solid fa-close" id="close"></span>
+    <a href="#ins">installation</a>
+    <a href="#usage">usage</a>
+    <a href="#array">array utilities</a>
+    <a href="#dom">Dom utilities</a>
+    <a href="#function">function helpers</a>
+    <a href="#string">string manipulation</a>
+    <a href="#swoophysix">SwooPhysix</a>
+    <a href="#swooptest">SwoopTest</a>
+    <a href="#swoopcache">SwoopCache</a>
+    <a href="#examp">examples</a>
+  </nav>
+  <section class="top">
+    <h2>SWOOP.JS - DOCUMENTATION</h2>
+    <span class="fa-solid fa-bars" id="open"></span>
+  </section>
+  <section class="root">
+<h1>SWOOP.JS : simplifying web development with only one library</h1>
+
+<p>Tired of juggling with multiple libraries and utilities for your projects? Don't worry, Swoop.js is here to help! A lightweight versatile javascript utility library, containing a ton of useful functions, that simplifies the process of web development.</p>
+
+<p>Swoop js has a comprehensive set of features, from common utilities to advanced and more specific utility classes, such as:</p>
+
+<ul>
+<li><b>SWOOPHYSIX</b> for making physics calculations and unit conversions.</li>
+<li><b>SWOOP TEST</b> for unit testing, helping you to write test cases for your code.</li>
+<li><b>SWOOP CACHE</b> to store values for use later, with TTL feature.</li>
+</ul>
+
+<h3 id="ins">INSTALLATION</h3>
+
+<p>You can simply include Swoop.js using our <a href="https://cdn.jsdelivr.net/gh/SomnathDevPro/Swoop.js@main/swoop.min.js">CDN</a> link</p>
+
+<p>or <a href="swoop.min.js" download>download</a> it from here</p>
+
+<h3 id="usage">USAGE</h3>
+<p>Let's get started with Swoop.js! Include Swoop.js in your source code to get started:</p>
+<h3>The Swoop object</h3>
+
+<p>The <code>SWOOP</code> object is the main object which you will be using to access the basic utilities! Available utility functions:</p>
+
+<h4 id="array">ARR (Array Functions)</h4>
+
+<ol>
+<li><code>union(arr1, arr2)</code>: Returns the union of two arrays.</li>
+<li><code>intersection(arr1, arr2)</code>: Returns the intersection of two arrays.</li>
+<li><code>difference(arr1, arr2)</code>: Returns the difference of two arrays.</li>
+<li><code>sum(arr)</code>: Returns the sum of all elements in an array.</li>
+<li><code>mean(arr)</code>: Returns the mean of an array.</li>
+<li><code>standard_deviation(arr)</code>: Returns the standard deviation of an array.</li>
+<li><code>variance(arr)</code>: Returns the variance of an array.</li>
+<li><code>median(arr)</code>: Returns the median of an array.</li>
+<li><code>min(arr)</code>: Returns the minimum value of an array.</li>
+<li><code>max(arr)</code>: Returns the maximum value of an array.</li>
+<li><code>countUnique(arr)</code>: Returns the number of unique values in an array.</li>
+<li><code>countDuplicates(arr)</code>: Returns the number of duplicate values in an array.</li>
+<li><code>merge(arr1, arr2)</code>: Merges two arrays.</li>
+<li><code>freq(arr)</code>: Returns the frequency of elements in an array.</li>
+</ol>
+
+<h4 id="dom">DOM (Document Object Model Functions)</h4>
+
+<ol>
+<li><code>select(selector)</code>: Selects an element by its selector.</li>
+<li><code>selectid(id)</code>: Selects an element by its ID.</li>
+<li><code>selectall(element)</code>: Selects all elements with a matching selector.</li>
+<li><code>addListener(element, event, fn)</code>: Attaches an event listener to an element.</li>
+<li><code>removeListener(element, event, fn)</code>: Removes an event listener from an element.</li>
+</ol>
+
+<h4 id="function">FUNC (Functional Programming Utilities)</h4>
+
+<ol>
+<li><code>throttle(func, wait)</code>: Throttles a function to prevent excessive calls.</li>
+<li><code>debounce(func, wait)</code>: Debounces a function to prevent excessive calls.</li>
+<li><code>memoize(func)</code>: Memoizes a function to cache its results.</li>
+<li><code>curry(func)</code>: Curries a function to enable partial application.</li>
+<li><code>once(func)</code>: Ensures a function is called only once.</li>
+</ol>
+<h4 id="maths">MATHS (Mathematical Functions)</h4>
+<ol>
+<li><code>sin(angle)</code>: Returns the sine of an angle.</li>
+<li><code>cos(angle)</code>: Returns the cosine of an angle.</li>
+<li><code>tan(angle)</code>: Returns the tangent of an angle.</li>
+<li><code>distance(x1, x2, y1, y2)</code>: Returns the distance between two points.</li>
+<li><code>midpoint(x1, x2, y1, y2)</code>: Returns the midpoint between two points.</li>
+<li><code>lerp(a, b, t)</code>: Returns the linear interpolation between two values.</li>
+<li><code>clamp(value, min, max)</code>: Clamps a value within a range.</li>
+<li><code>signum(value)</code>: Returns the sign of a number.</li>
+<li><code>sqrt(value)</code>: Returns the square root of a number.</li>
+<li><code>round(num)</code>: Returns the rounded value of a number.</li>
+<li><code>ceil(num)</code>: Returns the ceiling of a number.</li>
+<li><code>absolute(num)</code>: Returns the absolute value of a number.</li>
+<li><code>gcd(a, b)</code>: Returns the Greatest Common Divisor of two numbers.</li>
+<li><code>lcm(a, b)</code>: Returns the Least Common Multiple of two numbers.</li>
+<li><code>hypot(p, b)</code>: Returns the hypotenuse of a right triangle.</li>
+<li><code>randnum(min, max)</code>: Returns a random number within a range.</li>
+</ol>
+
+<h4 id="string">STR (String Functions)</h4>
+
+<ol>
+<li><code>strip(str)</code>: Removes whitespace from a string.</li>
+<li><code>contains(str, search, position)</code>: Checks if a substring is present in a string.</li>
+<li><code>isBlank(str)</code>: Checks if a string is blank.</li>
+<li><code>isNotBlank(str)</code>: Checks if a string is not blank.</li>
+<li><code>isAlphabet(str)</code>: Checks if a string contains only alphabetic characters.</li>
+<li><code>isNumeric(str)</code>: Checks if a string contains only numeric characters.</li>
+<li><code>echo(str, n)</code>: Repeats a string n times.</li>
+<li><code>capitalise(str)</code>: Capitalizes the first letter of a string.</li>
+</ol>
+<h2 id="swoophysix">Swoophysix Class</h2>
+
+<p>The Swoophysix class provides a collection of methods for converting between different units of measurement and calculating various physics-related values.</p>
+
+<h3>Constructor</h3>
+
+<code>constructor(gravity=9.81)</code>
+
+<p>Initializes the Swoophysix object with the given gravity value (default is 9.81 m/s^2).</p>
+
+<h2>Heat Conversion Methods</h2>
+
+<h3>Temperature Conversions</h3>
+
+<ul>
+  <li><code>convertFtoC(value)</code>: Converts a temperature value from Fahrenheit to Celsius.</li>
+  <li><code>convertCtoF(value)</code>: Converts a temperature value from Celsius to Fahrenheit.</li>
+  <li><code>convertCtoK(value)</code>: Converts a temperature value from Celsius to Kelvin.</li>
+  <li><code>convertKtoC(value)</code>: Converts a temperature value from Kelvin to Celsius.</li>
+  <li><code>convertFtoK(value)</code>: Converts a temperature value from Fahrenheit to Kelvin.</li>
+  <li><code>convertKtoF(value)</code>: Converts a temperature value from Kelvin to Fahrenheit.</li>
+</ul>
+
+<h2>Length Conversion Methods</h2>
+
+<h3>Length Conversions</h3>
+
+<ul>
+  <li><code>convertMtoFT(value)</code>: Converts a length value from meters to feet.</li>
+  <li><code>convertFTtoM(value)</code>: Converts a length value from feet to meters.</li>
+  <li><code>convertINtoCM(value)</code>: Converts a length value from inches to centimeters.</li>
+  <li><code>convertCMtoIN(value)</code>: Converts a length value from centimeters to inches.</li>
+  <li><code>convertMtoIN(value)</code>: Converts a length value from meters to inches.</li>
+  <li><code>convertINtoM(value)</code>: Converts a length value from inches to meters.</li>
+  <li><code>convertCMtoM(value)</code>: Converts a length value from centimeters to meters.</li>
+  <li><code>convertMtoCM(value)</code>: Converts a length value from meters to centimeters.</li>
+</ul>
+
+<h2>Physics Calculation Methods</h2>
+
+<h3>Physics Calculations</h3>
+
+<ul>
+  <li><code>force(mass, acceleration)</code>: Calculates the force applied to an object.</li>
+  <li><code>pressure(force, area)</code>: Calculates the pressure exerted on an object.</li>
+  <li><code>energy(mass, velocity)</code>: Calculates the kinetic energy of an object.</li>
+  <li><code>momentum(mass, velocity)</code>: Calculates the momentum of an object.</li>
+  <li><code>liquid_pressure(area, height, density)</code>: Calculates the pressure exerted by a liquid.</li>
+  <li><code>friction(force, coeff)</code>: Calculates the frictional force.</li>
+  <li><code>acceleration(velocity, time)</code>: Calculates the acceleration of an object.</li>
+  <li><code>potential_energy(mass, height)</code>: Calculates the potential energy of an object.</li>
+  <li><code>torque(radii, force)</code>: Calculates the torque applied to an object.</li>
+</ul>
+
+<h2 id="swooptest">SwoopTest Class</h2>
+
+<p>The SwoopTest class provides a simple testing framework for writing and running tests.</p>
+
+<h3>Constructor</h3>
+
+<code>constructor()</code>
+
+<p>Initializes the SwoopTest object with an empty array of tests.</p>
+
+<h3>Adding Tests</h3>
+
+<code>addTest(name, fn)</code>
+
+<p>Adds a new test to the array of tests. The test is defined by a name and a function that contains the test logic.</p>
+
+<h3>Running Tests</h3>
+
+<code>runTests()</code>
+
+<p>Runs all the tests in the array of tests. If a test passes, it logs a success message to the console. If a test fails, it logs an error message to the console.</p>
+
+<h3>Assertion Methods</h3>
+
+<p>The following assertion methods can be used within tests to verify expected results:</p>
+
+<ul>
+<li><code>assertEqual(a, b)</code>: Verifies that two values are equal. If not, throws an error.</li>
+<li><code>assertNotEqual(a, b, message)</code>: Verifies that two values are not equal. If they are, throws an error.</li>
+<li><code>assertGreaterThan(a, b, message)</code>: Verifies that the first value is greater than the second. If not, throws an error.</li>
+<li><code>assertLessThan(a, b, message)</code>: Verifies that the first value is less than the second. If not, throws an error.</li>
+</ul>
+<h2 id="swoopcache">SwoopCache Class</h2>
+
+<p>The SwoopCache class provides a simple caching mechanism with a time-to-live (TTL) feature.</p>
+
+<h3>Constructor</h3>
+
+<code>constructor(TTL=60000)</code>
+
+<p>Initializes the SwoopCache object with an empty cache object and a default TTL of 60 seconds (60000 milliseconds).</p>
+
+<h3>Setting Cache Data</h3>
+
+<code>setCacheData(key, value)</code>
+
+<p>Sets a new cache entry with the given key and value. The entry will expire after the TTL period.</p>
+
+<h3>Getting Cached Data</h3>
+
+<code>getCachedData(key)</code>
+
+<p>Retrieves the cached value for the given key. If the entry has expired or does not exist, returns null.</p>
+
+<h3>Deleting Cached Data</h3>
+
+<code>deleteCachedData(key)</code>
+
+<p>Deletes the cached entry for the given key.</p>
+
+<h3>Clearing Cached Data</h3>
+
+<code>clearCachedData()</code>
+
+<p>Clears all cached entries.</p>
+
+<h3 id="examp">Examples</h3>
+<b>Union of two arrays</b>
+<pre class="code">
+<code>const arr1 = [1, 2, 3];
+  const arr2 = [3, 4, 5];
+  const union = SWOOP.ARR.union(arr1, arr2);
+  // [1, 2, 3, 4, 5]</code>
+</pre>
+
+<b>Sum of an array</b>
+<pre class="code">
+<code>const arr = [1, 2, 3, 4, 5];
+  const sum = SWOOP.ARR.sum(arr);
+  // 15</code>
+</pre>
+<b>Median of an array</b>
+<pre class="code">
+<code>const arr = [1, 3, 5, 7, 9];
+  const median = SWOOP.ARR.median(arr);
+  // 5</code>
+  </pre>
+
+  <b>Throttling A Function</b>
+  <pre class="code">
+  <code>
+    SWOOP.FUNC.throttle(myFunc(),2000)
+    /*allows the function to be called once in 2 seconds,i.e,2000 milliseconds*/
+  </code>
+    </pre>
+
+  <b>convert metres to centimetres using swoophysix</b>
+  <pre class="code">
+  <code>
+    const physix = new Swoophysix();
+    physix.convertMtoCM(20)
+    //converts 20 metres to centimetres
+  </code>
+  </pre>
+  <b>using SwoopCache to cache data</b>
+  <pre class="code">
+  <code>
+    const cache = new SwoopCache(TTL=60000)//the cached data resets after 1 minute
+    cache.setCacheData("myKey","myValue") //sets a data in the cache
+    //obtaining cached data 
+    cache.getCachedData("myKey")
+    //you can delete cache data like this:
+    cache.deleteCachedData("myKey")
+  </code>
+    </pre>
+
+<h2>Contributing</h2>
+<p>Swoop.js has just started its journey, and its features may be limited, but we believe that together, we can make it the best JavaScript library in the world. We highly appreciate contributions and look forward to collaborating with you to achieve this goal.</p>
+
+<p> If you'd like to contribute, please follow these guidelines:</p>
+
+<h3>Code Contributions</h3>
+
+<ol>
+<li>Fork the repository on GitHub.</li>
+<li>Create a new branch for your feature or fix.</li>
+<li>Write tests for your changes.</li>
+<li>Make sure your code passes all tests.</li>
+<li>Submit a pull request.</li>
+</ol>
+
+<h3>Documentation Contributions</h3>
+
+<ol>
+<li>Fork the repository on GitHub.</li>
+<li>Create a new branch for your documentation changes.</li>
+<li>Make your changes to the documentation files.</li>
+<li>Submit a pull request.</li>
+</ol>
+
+<h3>Issue Reporting</h3>
+
+<p>If you find a bug or have a feature request, please submit an issue on our GitHub page. Make sure to include as much detail as possible, such as:</p>
+
+<ul>
+<li>A clear description of the issue or feature request.</li>
+<li>Steps to reproduce the issue (if applicable).</li>
+<li>Any relevant code or screenshots.</li>
+</ul>
+
+<h2>Licensing</h2>
+
+<p>Swoop.js is licensed under the Apache 2.0 License. This means you can use, modify, and distribute the library freely, as long as you include the original copyright notice and license text in your project.</p>
+
+<h2>Versioning</h2>
+
+<p>Swoop.js uses semantic versioning. This means that versions are incremented as follows:</p>
+
+<ul>
+<li>Major version (e.g., 1.0.0): Breaking changes or significant new features.</li>
+<li>Minor version (e.g., 0.1.0): New features or enhancements.</li>
+<li>Patch version (e.g., 0.0.1): Bug fixes or minor changes.</li>
+</ul>
+
+<h2>Acknowledgments</h2>
+
+<p>Swoop.js is a standalone project, built from scratch using pure JavaScript.</p>
+</section>
+    <footer>
+      <p style="font-family:monospace">swoop.js©</p>
+      <a href="docs.html">docs</a>
+      <a href="https://github.com/SomnathDevPro/Swoop.js">GitHub</a>
+    </footer>
+    <script>
+      const openBtn = document.getElementById("open");
+      const closeBtn = document.getElementById("close");
+      const nav = document.getElementById("nav")
+      openBtn.addEventListener('click',()=>{
+        nav.style.transform="scale(1)" ;
+      })
+      closeBtn.addEventListener('click',()=>{
+        nav.style.transform="scale(0)";
+      })
+    </script>
+</body>
+</html>
